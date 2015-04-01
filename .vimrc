@@ -1,15 +1,21 @@
 "set nocompatible              " be iMproved, required
-"filetype off                  " required
-
+filetype off                  " required
+filetype plugin indent off
 " set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-"Plugin 'bling/vim-airline'
+Plugin 'bling/vim-airline'
+Plugin 'fatih/vim-go'
 
 set runtimepath^=~/.vim/bundle/vim-airline
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath^=~/.vim/bundle/nerdtree
+set runtimepath^=~/.vim/bundle/vim-go
+set runtimepath^=~/.vim/bundle/neocomplete.vim
+
+filetype plugin indent on
+syntax on
 
 colorscheme xoria256
 set t_Co=256
@@ -52,3 +58,13 @@ let g:airline_left_sep = '>'
 let g:airline_right_sep = '<'
 let g:airline_inactive_collapse=1
 let g:airline_section_warning=''
+
+"Auto complete
+let g:neocomplete#enable_at_startup = 1
+
+"golang
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
