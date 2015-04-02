@@ -27,7 +27,9 @@ set linespace=15
 set showmode
 set nowrap
 set tabstop=4
-set smarttab
+set shiftwidth=4
+set expandtab
+"set smarttab
 set number	"Always show line numbers
 set ignorecase	"Ignore case when searching
 "set visualbell	"don't beep
