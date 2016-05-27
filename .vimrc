@@ -49,7 +49,7 @@ nmap <C-1> :tabn<cr>
 command H let @/=""
 
 map <D-p> :CtrlP<cr>
-map <C-r> :CtrlPBuffTag<cr>
+map <C-r> :CtrlPBufTag<cr>
 
 nmap vs :vsplit<cr>
 nmap sp :split<cr>
